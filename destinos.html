@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos - Oasis Perú</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="img/logo.png" alt="Oasis Perú Logo" height="50">
+    </div>
+    <nav>
+        <a href="pagina.html">Inicio</a>
+        <a href="destinos.html" class="active">Destinos</a> <a href="#">Experiencias</a>
+        <a href="#">Eventos</a>
+        <a href="#"><i class="fas fa-user"></i></a>
+    </nav>
+</header>
+
+<main class="destinos-container">
+    <h1>Destinos nacionales <br>e internacionales</h1>
+
+    <div class="search-bar">
+        <label for="search-destinos"><i class="fas fa-plane-departure"></i> Viajes desde</label>
+        <input type="text" id="search-destinos" placeholder="Busca tu destino...">
+        <button type="button"><i class="fas fa-search"></i></button>
+    </div>
+
+    <section class="destinos-grid">
+        <div class="destinos-columna">
+            <h2>Nacionales</h2>
+            <div class="destino-card">
+                <img src="img/cajamarca.jpg" alt="Paisaje de Cajamarca">
+                <div class="destino-info">
+                    <h3>CAJAMARCA</h3>
+                    <p class="precio">USD 41.91</p>
+                    <p class="precio-pen">PEN 155.06</p>
+                    <p class="detalles">Tasas incluidas - Vuelo directo</p>
+                </div>
+            </div>
+            <div class="destino-card">
+                 <img src="img/trujillo.jpg" alt="Balsas de totora en Trujillo">
+                 <div class="destino-info">
+                    <h3>TRUJILLO</h3>
+                    <p class="precio">USD 46.63</p>
+                    <p class="precio-pen">PEN 172.53</p>
+                    <p class="detalles">Tasas incluidas - Vuelo directo</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="destinos-columna">
+            <h2>Internacionales</h2>
+            <div class="destino-card">
+                 <img src="img/ayacucho.jpg" alt="Iglesia en Ayacucho">
+                 <div class="destino-info">
+                    <h3>AYACUCHO</h3> <p class="precio">USD 44.27</p>
+                    <p class="precio-pen">PEN 163.79</p>
+                    <p class="detalles">Tasas incluidas - Vuelo directo</p>
+                </div>
+            </div>
+             <div class="destino-card">
+                 <img src="img/huaraz.jpg" alt="Laguna en Huaraz">
+                 <div class="destino-info">
+                    <h3>HUARAZ</h3> <p class="precio">USD 46.63</p>
+                    <p class="precio-pen">PEN 172.53</p>
+                    <p class="detalles">Tasas incluidas - Vuelo directo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="mostrar-mas">
+        <button>Mostrar más ofertas</button>
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2025 Oasis Perú - Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
