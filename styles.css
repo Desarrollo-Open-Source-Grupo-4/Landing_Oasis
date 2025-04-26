@@ -1,0 +1,515 @@
+/* --- Ajustes Generales y Header (según mockup) --- */
+body {
+    margin: 0;
+    /* Mantenemos el verde pastel como fondo general por si acaso */
+    background-color: #CFFFD8;
+    color: #001A23;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    /* Cambiamos al color oscuro del mockup */
+    background-color: #001A23; /* Negro profundo */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    color: #FFFFFF;
+}
+
+nav a {
+    /* Cambiamos el color para que coincida con el mockup */
+    color: #76E3D1; /* Turquesa suave */
+    margin: 0 15px;
+    text-decoration: none;
+    /* Hacemos la fuente un poco menos pesada si es necesario */
+    /* font-weight: normal; */ /* Descomenta si quieres quitar negrita */
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold; /* Mantenemos bold como en el mockup */
+}
+
+/* --- Ajustes Hero Section (según mockup) --- */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #76E3D1; /* Turquesa suave (ya estaba bien) */
+}
+
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 56px;
+    margin-bottom: 10px;
+    color: #001A23; /* Negro profundo (ya estaba bien) */
+}
+
+/* Aseguramos estilo para h2 también (puede que falte en el original) */
+.hero h2 {
+    font-family: 'Open Sans', sans-serif; /* O 'Poppins' si prefieres */
+    font-size: 1.5rem; /* Ajusta tamaño si es necesario */
+    color: #001A23; /* Negro profundo */
+    margin-bottom: 30px; /* Más espacio antes del botón */
+    font-weight: bold; /* Parece negrita en el mockup */
+}
+
+/* Estilo específico para el botón del Hero con ID */
+#heroButton {
+    background-color: #001A23; /* Negro profundo */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 15px 35px; /* Hacemos el botón más grande */
+    border: none;
+    font-size: 1.1rem; /* Texto ligeramente más grande */
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif; /* Fuente consistente */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+#heroButton:hover {
+    background-color: #2A3A3F; /* Gris azulado oscuro al pasar el mouse */
+}
+
+
+/* --- Ajustes Content Section (Formulario e Info) --- */
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0; /* Quitamos margen superior/inferior */
+    padding: 40px 20px; /* Añadimos padding */
+    /* Aplicamos el fondo turquesa a toda la sección */
+    background-color: #76E3D1;
+}
+
+/* Quitamos fondo y sombra específicos de .formulario y .info */
+.formulario, .info {
+    background-color: transparent; /* Sin fondo propio */
+    padding: 0; /* Quitamos padding si no es necesario o ajustamos */
+    border-radius: 0;
+    margin: 10px;
+    flex: 1 1 350px; /* Ajustamos flex-basis si es necesario */
+    box-shadow: none; /* Sin sombra */
+}
+
+/* --- Ajustes Formulario (según mockup) --- */
+.formulario h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #001A23;
+    text-align: center; /* Centramos título "Registro" */
+}
+
+/* Estilos para las etiquetas añadidas */
+.formulario form label {
+    display: block; /* Hace que la etiqueta ocupe su propia línea */
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #001A23; /* O un gris oscuro si prefieres: #2A3A3F */
+    padding-left: 10%; /* Alinea con los inputs si tienen margen/padding */
+    visibility: hidden; /* Oculta la etiqueta visualmente pero la mantiene para accesibilidad */
+    height: 0; /* Reduce su espacio a cero */
+    overflow: hidden; /* Asegura que no ocupe espacio */
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centramos los inputs y el botón */
+}
+
+.formulario form input {
+    margin-bottom: 15px;
+    padding: 12px; /* Aumentamos padding */
+    border: 1px solid #BFCFCC;
+    border-radius: 6px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #CFFFD8; /* Verde pastel claro */
+    width: 80%; /* Ancho de los inputs */
+    box-sizing: border-box;
+    color: #001A23; /* Color del texto dentro del input */
+}
+
+
+
+.formulario form button {
+    background-color: #001A23; /* Negro profundo */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 6px;
+    width: 82%; /* Ancho igual al de los inputs */
+    margin-top: 10px; /* Espacio sobre el botón */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+.formulario form button:hover {
+    background-color: #2A3A3F; /* Gris azulado oscuro */
+}
+
+
+
+.info h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    margin-bottom: 10px; /* Menos espacio debajo del título */
+    color: #001A23;
+    /* text-align: center; */ /* Descomenta si quieres centrar los títulos */
+}
+
+.info p {
+    font-family: 'Open Sans', sans-serif;
+    color: #001A23; /* Texto principal un poco más oscuro */
+    line-height: 1.6;
+    font-size: 0.95rem; /* Puedes ajustar el tamaño si es necesario */
+    margin-bottom: 30px; /* Espacio entre párrafos o después del último */
+}
+
+/* Eliminamos estilos de .info-block ya que quitamos esos divs */
+/* .info-block { ... } */ /* Puedes borrar estas reglas si existen */
+
+
+/* --- Footer (sin cambios aparentes) --- */
+footer {
+    background-color: #001A23;
+    color: #F1F8F6;
+    text-align: center;
+    padding: 20px;
+    /* Quitamos el margen superior si .content llega hasta abajo */
+    /* margin-top: 40px; */
+    font-size: 0.9rem;
+}
+
+/* Estilos para el Modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Se queda fijo en la pantalla */
+    z-index: 1000; /* Se asegura que esté sobre otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permite scroll si el contenido es muy largo */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    padding-top: 60px; /* Espacio desde arriba */
+}
+
+.modal-content {
+    background-color: #76E3D1; /* Mismo color turquesa suave que el hero section */
+    margin: 5% auto; /* Centrado vertical y horizontalmente */
+    padding: 40px;
+    border-radius: 12px;
+    width: 80%; /* Ancho del modal */
+    max-width: 500px; /* Ancho máximo */
+    position: relative; /* Para posicionar el botón de cerrar */
+    color: #001A23; /* Negro profundo para el texto */
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+
+.modal-content h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px; /* Tamaño similar al mockup */
+    margin-bottom: 30px; /* Más espacio debajo del título */
+    color: #001A23;
+}
+
+/* Estilos para el botón de cerrar */
+.close-button {
+    color: #001A23; /* Negro profundo */
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #2A3A3F; /* Gris azulado oscuro al pasar el mouse */
+    text-decoration: none;
+}
+
+/* Estilos para el formulario dentro del modal */
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos */
+}
+
+#loginForm label {
+    align-self: flex-start; /* Alinea las etiquetas a la izquierda */
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    color: #001A23; /* Negro profundo */
+    margin-left: 10%; /* Ajusta para alinear con inputs */
+    width: 80%; /* Asegura que la etiqueta ocupe espacio */
+}
+
+#loginForm input[type="email"],
+#loginForm input[type="password"] {
+    background-color: #CFFFD8; /* Verde pastel claro para inputs */
+    color: #001A23; /* Texto negro */
+    border: 1px solid #BFCFCC;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 20px; /* Más espacio entre inputs */
+    width: 80%; /* Ancho de los inputs */
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+#loginForm input[type="email"]::placeholder,
+#loginForm input[type="password"]::placeholder {
+    color: #5c8374a3; /* Color del placeholder un poco más oscuro */
+    opacity: 0.7;
+}
+
+#loginForm button[type="submit"] {
+    background-color: #001A23; /* Negro profundo para el botón */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 12px 24px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    width: 82%; /* Ancho del botón */
+    margin-top: 10px; /* Espacio sobre el botón */
+    box-sizing: border-box;
+}
+
+#loginForm button[type="submit"]:hover {
+    background-color: #2A3A3F; /* Gris azulado oscuro al pasar el mouse */
+}
+
+.forgot-password {
+    color: #001A23; /* Negro profundo */
+    text-decoration: none;
+    margin-top: 20px; /* Espacio sobre el enlace */
+    font-size: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Para (destinos.html) --- */
+
+/* Contenedor principal y título */
+.destinos-container {
+    padding: 40px 30px; /* Espaciado interior */
+    background-color: #76E3D1; /* Mismo fondo turquesa suave que el hero */
+    color: #001A23; /* Texto negro profundo */
+}
+
+.destinos-container h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px; /* Tamaño del título principal */
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.3; /* Espacio entre líneas si el título es largo */
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    background-color: #289C99; /* Verde marino, como el header */
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    color: #FFFFFF; /* Texto blanco */
+    gap: 10px; /* Espacio entre elementos */
+}
+
+.search-bar label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre icono y texto */
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1; /* Ocupa el espacio disponible */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #CFFFD8; /* Fondo verde pastel claro */
+    color: #001A23; /* Texto negro */
+}
+
+.search-bar input[type="text"]::placeholder {
+    color: #5c8374a3; /* Placeholder */
+}
+
+.search-bar button {
+    background-color: transparent; /* Sin fondo */
+    border: none;
+    color: #FFFFFF; /* Icono blanco */
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Grid de destinos */
+.destinos-grid {
+    display: flex;
+    gap: 30px; /* Espacio entre columnas Nacionales/Internacionales */
+    flex-wrap: wrap; /* Para que se adapte en pantallas pequeñas */
+    justify-content: space-between; /* Distribuye el espacio */
+}
+
+.destinos-columna {
+    flex: 1; /* Cada columna intenta ocupar el mismo espacio */
+    min-width: 300px; /* Ancho mínimo antes de envolver */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre cards dentro de una columna */
+}
+
+.destinos-columna h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Espacio debajo de Nacionales/Internacionales */
+    color: #001A23;
+    border-bottom: 2px solid #289C99; /* Línea decorativa */
+    padding-bottom: 5px;
+}
+
+/* Tarjeta de destino */
+.destino-card {
+    background-color: #CFFFD8; /* Fondo verde pastel */
+    border-radius: 10px;
+    overflow: hidden; /* Para que la imagen no se salga del borde redondeado */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Efecto suave al pasar el mouse */
+}
+
+.destino-card:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta ligeramente */
+}
+
+.destino-card img {
+    width: 100%;
+    height: 180px; /* Altura fija para la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+    display: block; /* Evita espacios extra debajo de la imagen */
+}
+
+.destino-info {
+    padding: 15px 20px;
+    color: #001A23; /* Texto negro */
+}
+
+.destino-info h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin: 0 0 5px 0; /* Ajusta márgenes */
+}
+
+.destino-info .precio {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #289C99; /* Verde marino para el precio principal */
+    margin: 0;
+}
+
+.destino-info .precio-pen {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin: 0 0 10px 0; /* Espacio antes de los detalles */
+}
+
+.destino-info .detalles {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #2A3A3F; /* Gris azulado oscuro */
+    margin: 0;
+}
+
+/* Botón "Mostrar más ofertas" */
+.mostrar-mas {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.mostrar-mas button {
+    background-color: #001A23; /* Negro profundo */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mostrar-mas button:hover {
+    background-color: #2A3A3F; /* Gris azulado oscuro */
+}
+
+/* Estilo para el enlace activo en la navegación */
+header nav a.active {
+    font-weight: bold;
+    /* Puedes añadir más estilos como un subrayado o color diferente */
+    border-bottom: 2px solid #FFFFFF; /* Ejemplo: subrayado blanco */
+    padding-bottom: 2px;
+}
+
+/* Estilo para el icono de usuario en el header */
+header nav .fa-user {
+    font-size: 1.2rem; /* Tamaño del icono */
+    vertical-align: middle; /* Alinea mejor con el texto */
+}
+
+/* --- Ajustes Responsivos (Opcional, pero recomendado) --- */
+@media (max-width: 768px) {
+    .destinos-grid {
+        flex-direction: column; /* Apila las columnas en pantallas pequeñas */
+        gap: 40px; /* Aumenta el espacio vertical entre secciones */
+    }
+
+    .destinos-container h1 {
+        font-size: 30px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: stretch; /* Estira los elementos */
+    }
+
+    .search-bar label {
+        margin-bottom: 10px;
+        justify-content: center; /* Centra la etiqueta */
+    }
+
+     .search-bar button {
+        position: absolute; /* Posiciona el botón de búsqueda sobre el input si se desea */
+        right: 35px; /* Ajustar posición */
+        top: 153px; /* Ajustar posición */
+        background-color: #289C99; /* Dale un fondo si es necesario */
+        padding: 8px 10px;
+        border-radius: 6px;
+    }
+}
